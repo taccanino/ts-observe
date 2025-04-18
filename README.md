@@ -2,9 +2,25 @@
 
 ```ts-observe``` provides a flexible way to wrap functions, methods, accessors, and class constructors with middleware logic in TypeScript. This allows you to execute code *before* and *after* the original logic runs, enabling Aspect-Oriented Programming (AOP) patterns like logging, validation, caching, performance monitoring, and more, primarily through the use of decorators.
 
-You can add this package via npm with the following command:
-```
+## Development
+
+From your terminal run:
+
+```sh
 npm i ts-observe
+```
+
+to install the package.
+
+If you are using typescript, make sure to include the following in your tsconfig.json:
+
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
 ```
 
 ## Core Concept: The ```observe``` Function
