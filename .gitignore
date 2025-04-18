@@ -1,0 +1,51 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled TypeScript output (adjust if your outDir in tsconfig.json is different)
+dist/
+*.js.map
+*.d.ts.map
+
+# Build artifacts (if using tools like tsc-watch or others)
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables (never commit secrets!)
+.env
+.env.*
+!.env.example
+!.env.template
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw? # Vim swap files
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test runner caches / reports
+coverage/
+.nyc_output/
+
+# Optional: Lockfiles (if you prefer not to commit them, though committing is often recommended)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Optional: Temporary files
+*.tmp
+*.temp

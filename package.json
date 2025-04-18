@@ -1,0 +1,34 @@
+{
+  "name": "ts-observe",
+  "version": "1.0.0",
+  "description": "A simple library to create wrapping middlewares for all sort of functions, classes, methods and accessors. This library enables you to decorate (wrap for standalone functions) with before and after middlewares. This approach let's you abstract from the core logic of the code you are working on and add functionalities like logging.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "observe",
+    "typescript",
+    "aop",
+    "proxy",
+    "middleware",
+    "meta-programming"
+  ],
+  "author": "Pietro Brega <pietro.brega@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "ts-observe": "file:"
+  }
+}

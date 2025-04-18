@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2024", // Target JavaScript version (ES2016 is widely compatible)
+    "module": "CommonJS", // Module system (CommonJS is common for Node.js compatibility)
+                         // Consider "ESNext" if targeting modern bundlers primarily.
+    "declaration": true, // IMPORTANT: Generates corresponding '.d.ts' declaration files.
+                         // This is crucial for users of your library in TypeScript.
+    "outDir": "./dist", // Output directory for compiled files (JS and .d.ts).
+    "rootDir": "./src", // Location of your source TypeScript files.
+
+    /* Strict Type-Checking Options */
+    "strict": true, // Enable all strict type-checking options (recommended).
+
+    /* Module Resolution Options */
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules.
+    "skipLibCheck": true, // Skip type checking of declaration files (speeds up compilation).
+    "forceConsistentCasingInFileNames": true, // Prevent errors related to case sensitivity.
+
+    /* Source Map Options */
+    // "sourceMap": true, // Optional: Generate source maps for debugging.
+
+    /* Other */
+    // "declarationMap": true, // Optional: Generate source maps for declaration files.
+    "experimentalDecorators": true, // Enable experimental support for decorators.
+    "emitDecoratorMetadata": true, // Emit design-type metadata for decorated declarations.
+    "resolveJsonModule": true,
+    "sourceMap": true,
+  },
+  "include": ["src/**/*"], // Specify which files TypeScript should compile.
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"] // Specify files to exclude.
+}
