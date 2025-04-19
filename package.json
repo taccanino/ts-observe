@@ -1,6 +1,6 @@
 {
   "name": "ts-observe",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple library to create wrapping middlewares for all sort of functions, classes, methods and accessors. This library enables you to decorate (wrap for standalone functions) with before and after middlewares. This approach let's you abstract from the core logic of the code you are working on and add functionalities like logging.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
