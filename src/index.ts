@@ -76,7 +76,7 @@ export type MethodResultMiddleware<TReturn> = (this: any, context: MiddlewareCon
 export type ConstructorArgsMiddleware<TArgs extends any[]> = (this: null, context: MiddlewareContext, ...args: TArgs) => TArgs;
 export type ConstructorInstanceMiddleware<TInstance> = (this: TInstance, context: MiddlewareContext, instance: TInstance) => TInstance | void;
 
-export type AccessorGetArgMiddleware = (this: any, context: MiddlewareContext) => any; // BeforeGet specific
+export type AccessorGetArgMiddleware = (MethodArgsMiddleware<any[]>); // BeforeGet specific (getters have no args)
 export type AccessorGetResultMiddleware<TReturn> = (this: any, context: MiddlewareContext, result: TReturn) => TReturn; // AfterGet specific
 export type AccessorSetArgMiddleware<TVal> = (this: any, context: MiddlewareContext, value: TVal) => TVal; // BeforeSet specific
 export type AccessorSetResultMiddleware = MethodResultMiddleware<void>; // AfterSet specific (setters return void)
